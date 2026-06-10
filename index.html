@@ -28,6 +28,7 @@
   --accent:#3d4a3f;
   --accent-warm:#8a6647;
   --line:#ddd4c8;
+  --ink-deep:18,16,13;
   --white:#fffdfa;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -36,6 +37,9 @@ body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--ink);line
 h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:500}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
+:focus{outline:none}
+:focus-visible{outline:2px solid var(--accent-warm);outline-offset:3px}
+.hero :focus-visible,.card:focus-visible,.lb :focus-visible{outline-color:#fff}
 .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
 
 /* header */
@@ -64,7 +68,7 @@ body.menu-open header{z-index:60}
 /* hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:url('img/p09_00.jpg') center 35%/cover no-repeat}
-.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,15,.35) 0%,rgba(20,18,15,.05) 40%,rgba(20,18,15,.62) 100%)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(var(--ink-deep),.35) 0%,rgba(var(--ink-deep),.05) 40%,rgba(var(--ink-deep),.62) 100%)}
 .hero .wrap{position:relative;z-index:2;padding-bottom:9vh;width:100%}
 .hero h1{font-size:clamp(40px,7vw,86px);line-height:1.04;font-weight:500;max-width:13ch}
 .hero p.sub{margin-top:22px;font-size:clamp(15px,1.6vw,19px);max-width:46ch;color:rgba(255,255,255,.88)}
@@ -75,10 +79,18 @@ body.menu-open header{z-index:60}
 .btn.solid:hover{background:transparent;color:#fff}
 .btn.dark{border-color:var(--accent);background:var(--accent);color:#fff;font-family:'Manrope',sans-serif;font-size:13px}
 .btn.dark:hover{background:transparent;color:var(--accent)}
+.btn.ghost{border-color:var(--accent);background:transparent;color:var(--accent);font-family:'Manrope',sans-serif;font-size:13px}
+.btn.ghost:hover{background:var(--accent);color:#fff}
+.contact-cta{margin:26px 0 34px;display:flex;gap:14px;flex-wrap:wrap}
+.about-photo img{object-position:center 32%}
 
 /* sections */
 section{padding:96px 0}
 .kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent-warm);margin-bottom:14px}
+.kicker.on-dark{color:rgba(255,255,255,.8)}
+.lead{color:var(--ink-soft);max-width:48ch}
+.lead.sm{max-width:38ch;font-size:15px}
+.port-head h2{margin-bottom:0}
 h2{font-size:clamp(32px,4.4vw,52px);line-height:1.1;margin-bottom:20px}
 
 /* about */
@@ -99,11 +111,11 @@ h2{font-size:clamp(32px,4.4vw,52px);line-height:1.1;margin-bottom:20px}
 .card{position:relative;cursor:pointer;overflow:hidden;background:var(--white)}
 .card img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .7s cubic-bezier(.2,.6,.2,1)}
 .card:hover img{transform:scale(1.05)}
-.card .veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(22,20,17,.72));opacity:.95}
+.card .veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(var(--ink-deep),.72));opacity:.95}
 .card .info{position:absolute;left:22px;right:22px;bottom:20px;color:#fff}
 .card .info .tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.75)}
 .card .info h3{font-size:24px;margin-top:4px;font-weight:500;line-height:1.2}
-.card .count{position:absolute;top:16px;right:16px;background:rgba(22,20,17,.55);color:#fff;font-size:12px;padding:5px 12px;border-radius:20px;letter-spacing:.06em}
+.card .count{position:absolute;top:16px;right:16px;background:rgba(var(--ink-deep),.55);color:#fff;font-size:12px;padding:5px 12px;border-radius:20px;letter-spacing:.06em}
 
 /* services */
 .serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:30px}
@@ -113,9 +125,9 @@ h2{font-size:clamp(32px,4.4vw,52px);line-height:1.1;margin-bottom:20px}
 .serv p{color:var(--ink-soft);font-size:15px}
 
 /* geo strip */
-.geo{background:var(--accent);color:#f2efe8;padding:64px 0;text-align:center}
+.geo{background:var(--accent);color:var(--bg);padding:64px 0;text-align:center}
 .geo .serif{font-size:clamp(24px,3.4vw,38px);font-style:italic;max-width:30ch;margin:0 auto;line-height:1.3}
-.geo .cities{margin-top:18px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:rgba(242,239,232,.7)}
+.geo .cities{margin-top:18px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:rgba(246,243,238,.7)}
 
 /* contact */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
@@ -130,7 +142,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 /* lightbox */
-.lb{position:fixed;inset:0;background:rgb(18,16,13);z-index:100;display:none;flex-direction:column}
+.lb{position:fixed;inset:0;background:rgb(var(--ink-deep));z-index:100;display:none;flex-direction:column}
 .lb.open{display:flex}
 .lb-top{display:flex;align-items:center;justify-content:space-between;padding:18px 26px;color:#fff}
 .lb-title{font-family:'Cormorant Garamond',serif;font-size:22px}
@@ -211,7 +223,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <div class="hero">
   <div class="wrap">
-    <p class="kicker" style="color:rgba(255,255,255,.8)">Дизайнер интерьеров · архитектор</p>
+    <p class="kicker on-dark">Дизайнер интерьеров · архитектор</p>
     <h1>Я создаю уникальные проекты и&nbsp;воплощаю их в&nbsp;жизнь</h1>
     <p class="sub">Продуманные, тёплые и характерные интерьеры квартир и домов — от планировки до последней детали.</p>
     <div class="cta-row">
@@ -223,7 +235,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <section id="about">
   <div class="wrap about-grid">
-    <div class="about-photo"><img src="img/portrait.jpg" alt="Ирина Новикова — дизайнер интерьеров" style="object-position:center 32%"></div>
+    <div class="about-photo"><img src="img/portrait.jpg" alt="Ирина Новикова — дизайнер интерьеров"></div>
     <div class="about-text">
       <p class="kicker">Обо мне</p>
       <h2>Ирина Новикова</h2>
@@ -244,9 +256,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div class="port-head">
       <div>
         <p class="kicker">Портфолио</p>
-        <h2 style="margin-bottom:0">Проекты</h2>
+        <h2>Проекты</h2>
       </div>
-      <p style="color:var(--ink-soft);max-width:38ch;font-size:15px">Нажмите на проект, чтобы посмотреть все фотографии.</p>
+      <p class="lead sm">Нажмите на проект, чтобы посмотреть все фотографии.</p>
     </div>
     <div class="grid" id="grid"></div>
   </div>
@@ -288,10 +300,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
     <div>
       <p class="kicker">Контакты</p>
       <h2>Обсудим ваш проект?</h2>
-      <p style="color:var(--ink-soft);max-width:48ch">Напишите мне — расскажу, как строится работа, сориентирую по срокам и стоимости.</p>
-      <div class="cta-row" style="margin:26px 0 34px;display:flex;gap:14px;flex-wrap:wrap">
+      <p class="lead">Напишите мне — расскажу, как строится работа, сориентирую по срокам и стоимости.</p>
+      <div class="contact-cta">
         <a class="btn dark" href="https://wa.me/79601841927" target="_blank" rel="noopener">Написать в WhatsApp</a>
-        <a class="btn dark" style="background:transparent;color:var(--accent)" href="https://t.me/+79601841927" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn ghost" href="https://t.me/+79601841927" target="_blank" rel="noopener">Telegram</a>
       </div>
       <div class="contact-list">
         <a href="https://www.instagram.com/nnovikova.interior/" target="_blank" rel="noopener">
