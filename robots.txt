@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /profile.json
+Disallow: /posts_meta.json
+
+Sitemap: https://novikovaira.ru/sitemap.xml

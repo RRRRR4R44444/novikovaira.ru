@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ирина Новикова — дизайнер интерьеров | Москва, Санкт-Петербург, Нижний Новгород</title>
+<meta name="description" content="Ирина Новикова — дизайнер интерьеров с высшим архитектурным образованием. Дизайн-проекты квартир и домов под ключ в Москве, Санкт-Петербурге и Нижнем Новгороде. Работаю по всей России дистанционно.">
+<link rel="canonical" href="https://novikovaira.ru/">
+<meta name="keywords" content="дизайнер интерьеров, дизайн интерьера, дизайн-проект квартиры, Ирина Новикова, дизайн интерьера Москва, дизайн интерьера Санкт-Петербург, дизайн интерьера Нижний Новгород, дизайн квартиры под ключ">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Ирина Новикова — дизайн интерьеров">
+<meta property="og:title" content="Ирина Новикова — дизайнер интерьеров">
+<meta property="og:description" content="Я создаю уникальные проекты и воплощаю их в жизнь. Дизайн-проекты квартир и домов: Москва, Санкт-Петербург, Нижний Новгород — и вся Россия дистанционно.">
+<meta property="og:image" content="https://novikovaira.ru/img/p09_00.jpg">
+<meta property="og:url" content="https://novikovaira.ru/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%233d4a3f'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23f6f3ee' text-anchor='middle'%3EИН%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f3ee;
+  --bg-soft:#efe9e1;
+  --ink:#2b2723;
+  --ink-soft:#6c635a;
+  --accent:#3d4a3f;
+  --accent-warm:#a4836a;
+  --line:#ddd4c8;
+  --white:#fffdfa;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-weight:300}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:500}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;transition:.3s;padding:22px 0}
+header.scrolled{background:rgba(246,243,238,.92);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line);padding:14px 0}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.logo{font-family:'Cormorant Garamond',serif;font-size:22px;letter-spacing:.08em;color:#fff;transition:.3s;white-space:nowrap}
+header.scrolled .logo{color:var(--ink)}
+.logo b{font-weight:600}
+nav.menu{display:flex;gap:34px}
+nav.menu a{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85);transition:.2s;white-space:nowrap}
+header.scrolled nav.menu a{color:var(--ink-soft)}
+nav.menu a:hover{opacity:.6}
+.burger{display:none;background:none;border:none;cursor:pointer;width:40px;height:40px;position:relative;z-index:60;padding:0}
+.burger span{display:block;width:24px;height:2px;background:#fff;margin:5px auto;transition:.3s}
+header.scrolled .burger span,body.menu-open .burger span{background:var(--ink)}
+body.menu-open .burger span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+body.menu-open .burger span:nth-child(2){opacity:0}
+body.menu-open .burger span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobile-menu{position:fixed;inset:0;background:var(--bg);z-index:55;display:none;flex-direction:column;align-items:center;justify-content:center;gap:34px}
+body.menu-open .mobile-menu{display:flex}
+.mobile-menu a{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--ink)}
+body.menu-open .logo{color:var(--ink)}
+body.menu-open header{z-index:60}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:url('img/p09_00.jpg') center 35%/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,15,.35) 0%,rgba(20,18,15,.05) 40%,rgba(20,18,15,.62) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:9vh;width:100%}
+.hero h1{font-size:clamp(40px,7vw,86px);line-height:1.04;font-weight:500;max-width:13ch}
+.hero p.sub{margin-top:22px;font-size:clamp(15px,1.6vw,19px);max-width:46ch;color:rgba(255,255,255,.88)}
+.hero .cta-row{margin-top:36px;display:flex;gap:16px;flex-wrap:wrap}
+.btn{display:inline-block;padding:15px 34px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;border:1px solid rgba(255,255,255,.7);color:#fff;transition:.25s}
+.btn:hover{background:#fff;color:var(--ink)}
+.btn.solid{background:#fff;color:var(--ink);border-color:#fff}
+.btn.solid:hover{background:transparent;color:#fff}
+
+/* sections */
+section{padding:96px 0}
+.kicker{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent-warm);margin-bottom:14px}
+h2{font-size:clamp(32px,4.4vw,52px);line-height:1.1;margin-bottom:20px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:380px 1fr;gap:70px;align-items:center}
+.about-photo{position:relative}
+.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.about-photo::after{content:"";position:absolute;top:18px;left:18px;right:-18px;bottom:-18px;border:1px solid var(--line);z-index:-1}
+.about-text p{margin-bottom:16px;color:var(--ink-soft);font-size:17px;max-width:58ch}
+.about-text p strong{color:var(--ink);font-weight:500}
+.facts{display:flex;gap:48px;margin-top:36px;flex-wrap:wrap}
+.fact .num{font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--accent);line-height:1}
+.fact .lbl{font-size:13px;color:var(--ink-soft);margin-top:6px;letter-spacing:.04em}
+
+/* portfolio */
+#portfolio{background:var(--bg-soft)}
+.port-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:44px;flex-wrap:wrap}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{position:relative;cursor:pointer;overflow:hidden;background:var(--white)}
+.card img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .7s cubic-bezier(.2,.6,.2,1)}
+.card:hover img{transform:scale(1.05)}
+.card .veil{position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(22,20,17,.72));opacity:.95}
+.card .info{position:absolute;left:22px;right:22px;bottom:20px;color:#fff}
+.card .info .tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.card .info h3{font-size:24px;margin-top:4px;font-weight:500;line-height:1.2}
+.card .count{position:absolute;top:16px;right:16px;background:rgba(22,20,17,.55);color:#fff;font-size:12px;padding:5px 12px;border-radius:20px;letter-spacing:.06em}
+
+/* services */
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:30px}
+.serv{background:var(--white);border:1px solid var(--line);padding:38px 32px}
+.serv .n{font-family:'Cormorant Garamond',serif;font-size:20px;color:var(--accent-warm)}
+.serv h3{font-size:26px;margin:10px 0 12px}
+.serv p{color:var(--ink-soft);font-size:15px}
+
+/* geo strip */
+.geo{background:var(--accent);color:#f2efe8;padding:64px 0;text-align:center}
+.geo .serif{font-size:clamp(24px,3.4vw,38px);font-style:italic;max-width:30ch;margin:0 auto;line-height:1.3}
+.geo .cities{margin-top:18px;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:rgba(242,239,232,.7)}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.contact-list{display:flex;flex-direction:column;gap:18px;margin-top:28px}
+.contact-list a{display:flex;align-items:center;gap:14px;font-size:17px;transition:.2s}
+.contact-list a:hover{color:var(--accent-warm)}
+.contact-list .ic{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.contact-list .ic svg{width:20px;height:20px;fill:var(--accent)}
+.contact-photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--ink-soft)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgb(18,16,13);z-index:100;display:none;flex-direction:column}
+.lb.open{display:flex}
+.lb-top{display:flex;align-items:center;justify-content:space-between;padding:18px 26px;color:#fff}
+.lb-title{font-family:'Cormorant Garamond',serif;font-size:22px}
+.lb-counter{font-size:13px;color:rgba(255,255,255,.6);letter-spacing:.1em}
+.lb-close{background:none;border:none;color:#fff;font-size:34px;cursor:pointer;line-height:1;opacity:.8}
+.lb-close:hover{opacity:1}
+.lb-stage{flex:1;display:flex;align-items:center;justify-content:center;position:relative;min-height:0;padding:0 70px}
+.lb-stage img{max-width:100%;max-height:calc(100svh - 160px);object-fit:contain}
+.lb-arrow{position:absolute;top:50%;transform:translateY(-50%);background:none;border:1px solid rgba(255,255,255,.35);color:#fff;width:52px;height:52px;border-radius:50%;font-size:22px;cursor:pointer;transition:.2s}
+.lb-arrow:hover{background:rgba(255,255,255,.12)}
+.lb-prev{left:18px}.lb-next{right:18px}
+.lb-cap{text-align:center;color:rgba(255,255,255,.75);font-size:14px;padding:14px 26px 22px;max-width:80ch;margin:0 auto}
+
+@media(max-width:960px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .about-grid{grid-template-columns:1fr;gap:44px}
+  .about-photo{max-width:380px}
+  .serv-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .contact-photo{display:none}
+}
+@media(max-width:860px){
+  nav.menu{display:none}
+  .burger{display:block}
+  .logo{font-size:18px}
+}
+@media(max-width:640px){
+  .grid{grid-template-columns:1fr}
+  section{padding:64px 0}
+  .lb-stage{padding:0 8px}
+  .lb-arrow{width:42px;height:42px}
+  .lb-prev{left:8px}.lb-next{right:8px}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Ирина Новикова — дизайн интерьеров",
+  "url": "https://novikovaira.ru/",
+  "image": "https://novikovaira.ru/img/p09_00.jpg",
+  "telephone": "+79601841927",
+  "priceRange": "$$",
+  "description": "Дизайн-проекты интерьеров квартир и домов под ключ: планировки, визуализации, рабочая документация, комплектация и авторское сопровождение.",
+  "areaServed": ["Москва", "Санкт-Петербург", "Нижний Новгород", "Псков"],
+  "sameAs": ["https://www.instagram.com/nnovikova.interior/"],
+  "founder": {
+    "@type": "Person",
+    "name": "Ирина Новикова",
+    "jobTitle": "Дизайнер интерьеров",
+    "image": "https://novikovaira.ru/img/portrait.jpg"
+  }
+}
+</script>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="logo" href="#"><b>ИРИНА&nbsp;НОВИКОВА</b> · интерьеры</a>
+    <nav class="menu">
+      <a href="#about">Обо мне</a>
+      <a href="#portfolio">Проекты</a>
+      <a href="#services">Услуги</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">Обо мне</a>
+  <a href="#portfolio">Проекты</a>
+  <a href="#services">Услуги</a>
+  <a href="#contact">Контакты</a>
+</div>
+
+<div class="hero">
+  <div class="wrap">
+    <p class="kicker" style="color:rgba(255,255,255,.8)">Дизайнер интерьеров · архитектор</p>
+    <h1>Я создаю уникальные проекты и&nbsp;воплощаю их в&nbsp;жизнь</h1>
+    <p class="sub">Продуманные, тёплые и характерные интерьеры квартир и домов — от планировки до последней детали.</p>
+    <div class="cta-row">
+      <a class="btn solid" href="#portfolio">Смотреть проекты</a>
+      <a class="btn" href="#contact">Обсудить проект</a>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo"><img src="img/portrait.jpg" alt="Ирина Новикова — дизайнер интерьеров" style="object-position:center 32%"></div>
+    <div class="about-text">
+      <p class="kicker">Обо мне</p>
+      <h2>Ирина Новикова</h2>
+      <p><strong>Дизайнер интерьеров с высшим архитектурным образованием.</strong> Проектирую жилые интерьеры, которые отражают характер своих владельцев: от сдержанной классики до смелых цветных решений.</p>
+      <p>Работаю на всех этапах — планировочное решение, визуализации, рабочая документация, комплектация и авторское сопровождение до результата. Мои проекты публикуются в профильных изданиях.</p>
+      <p>География работы: Москва, Санкт-Петербург, Нижний Новгород, Псков — и весь мир дистанционно. Большая часть проектов — в новых жилых комплексах Москвы и Петербурга.</p>
+      <div class="facts">
+        <div class="fact"><div class="num">12+</div><div class="lbl">проектов в портфолио</div></div>
+        <div class="fact"><div class="num">4</div><div class="lbl">города и проекты дистанционно</div></div>
+        <div class="fact"><div class="num">100%</div><div class="lbl">авторский подход к каждому дому</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="port-head">
+      <div>
+        <p class="kicker">Портфолио</p>
+        <h2 style="margin-bottom:0">Проекты</h2>
+      </div>
+      <p style="color:var(--ink-soft);max-width:38ch;font-size:15px">Нажмите на проект, чтобы посмотреть все фотографии.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <p class="kicker">Услуги</p>
+    <h2>Как мы можем работать</h2>
+    <div class="serv-grid">
+      <div class="serv">
+        <div class="n">01</div>
+        <h3>Дизайн-проект под ключ</h3>
+        <p>Полный проект интерьера: обмеры, планировочные решения, визуализации, рабочие чертежи и комплектация. Всё, что нужно для ремонта без сюрпризов.</p>
+      </div>
+      <div class="serv">
+        <div class="n">02</div>
+        <h3>Авторское сопровождение</h3>
+        <p>Контроль реализации проекта: взаимодействие со строителями и поставщиками, чтобы результат совпал с визуализациями.</p>
+      </div>
+      <div class="serv">
+        <div class="n">03</div>
+        <h3>Комплектация готового ремонта</h3>
+        <p>Подбор мебели, света и декора в уже готовую отделку — когда нужна не переделка, а точная расстановка акцентов.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="geo">
+  <div class="wrap">
+    <p class="serif">«Интерьер должен быть не картинкой из каталога, а отражением жизни тех, кто в нём живёт»</p>
+    <p class="cities">Москва · Санкт-Петербург · Нижний Новгород · Псков · весь мир</p>
+  </div>
+</div>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="kicker">Контакты</p>
+      <h2>Обсудим ваш проект?</h2>
+      <p style="color:var(--ink-soft);max-width:48ch">Напишите мне — расскажу, как строится работа, сориентирую по срокам и стоимости.</p>
+      <div class="contact-list">
+        <a href="https://www.instagram.com/nnovikova.interior/" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 2c-3.1 0-3.5 0-4.8.1-1.1.1-1.5.2-1.7.3-.4.2-.7.3-.9.6-.3.3-.5.5-.6.9-.1.3-.2.6-.3 1.7-.1 1.2-.1 1.6-.1 4.8s0 3.5.1 4.8c.1 1.1.2 1.5.3 1.7.2.4.3.7.6.9.3.3.5.5.9.6.3.1.6.2 1.7.3 1.2.1 1.6.1 4.8.1s3.5 0 4.8-.1c1.1-.1 1.5-.2 1.7-.3.4-.2.7-.3.9-.6.3-.3.5-.5.6-.9.1-.3.2-.6.3-1.7.1-1.2.1-1.6.1-4.8s0-3.5-.1-4.8c-.1-1.1-.2-1.5-.3-1.7-.2-.4-.3-.7-.6-.9-.3-.3-.5-.5-.9-.6-.3-.1-.6-.2-1.7-.3-1.2-.1-1.6-.1-4.8-.1zm0 3.4a5.1 5.1 0 1 1 0 10.2 5.1 5.1 0 0 1 0-10.2zm0 8.4a3.3 3.3 0 1 0 0-6.6 3.3 3.3 0 0 0 0 6.6zm6.5-8.6a1.2 1.2 0 1 1-2.4 0 1.2 1.2 0 0 1 2.4 0z"/></svg></span>
+          @nnovikova.interior
+        </a>
+        <a href="tel:+79601841927">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></span>
+          +7 960 184-19-27
+        </a>
+        <a href="https://wa.me/79601841927" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5c-.2 0-.4.1-.7.3-.2.2-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.7 4.3 3.8.6.3 1.1.4 1.4.5.6.2 1.2.2 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.4-.3z"/></svg></span>
+          WhatsApp
+        </a>
+        <a href="https://t.me/+79601841927" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M21.9 4.4 18.9 19c-.2 1-.8 1.2-1.6.8l-4.6-3.4-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6L18.3 6c.4-.3-.1-.5-.6-.2L7.4 12.3l-4.5-1.4c-1-.3-1-1 .2-1.4l17.4-6.7c.8-.3 1.5.2 1.4 1.6z"/></svg></span>
+          Telegram
+        </a>
+        <a href="http://m-infonn.ru/magazine/2-2023/%23p=46" target="_blank" rel="noopener">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm1 2v12h14V6H5zm2 2h6v5H7V8zm8 0h2v2h-2V8zm0 3h2v2h-2v-2zM7 15h10v1H7v-1z"/></svg></span>
+          Публикация в журнале
+        </a>
+      </div>
+    </div>
+    <div class="contact-photo"><img src="img/p01_00.jpg" alt="Интерьер кабинета — проект Ирины Новиковой" loading="lazy"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Ирина Новикова — дизайн интерьеров</span>
+    <span>novikovaira.ru</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb">
+  <div class="lb-top">
+    <div>
+      <div class="lb-title" id="lbTitle"></div>
+      <div class="lb-counter" id="lbCounter"></div>
+    </div>
+    <button class="lb-close" id="lbClose" aria-label="Закрыть">×</button>
+  </div>
+  <div class="lb-stage">
+    <button class="lb-arrow lb-prev" id="lbPrev" aria-label="Назад">‹</button>
+    <img id="lbImg" src="" alt="">
+    <button class="lb-arrow lb-next" id="lbNext" aria-label="Вперёд">›</button>
+  </div>
+  <div class="lb-cap" id="lbCap"></div>
+</div>
+
+<script>
+const PROJECTS = [
+  {title:"Зелёно-синий проект", tag:"Квартира целиком", cap:"Оттенки от оливкового до насыщенного синего перетекают из комнаты в комнату. Круговая планировка через ванную — функционально и удобно.", cover:"img/p09_00.jpg", imgs:["img/p09_00.jpg","img/p09_01.jpg","img/p09_02.jpg","img/p09_03.jpg","img/p09_04.jpg","img/p09_05.jpg","img/p09_06.jpg","img/p09_07.jpg","img/p09_08.jpg"]},
+  {title:"Кухня-гостиная, ЖК «1-й Шереметьевский»", tag:"Кухня-гостиная", cap:"Гармоничная, минималистичная, но уютная и яркая кухня-гостиная с изумрудными акцентами.", cover:"img/p03_00.jpg", imgs:["img/p03_00.jpg","img/p03_01.jpg","img/p03_02.jpg","img/p03_03.jpg","img/p03_04.jpg","img/p03_05.jpg","img/p03_06.jpg","img/p03_07.jpg","img/p03_08.jpg","img/p03_09.jpg"]},
+  {title:"Кабинет с библиотекой", tag:"Реализованный объект", cap:"Обволакивающая зона кабинета при спальне. Образ изобретателя: стилизованные небесные тела на потолке в духе гравюры Фламмариона, металлическая лампа с зажимами.", cover:"img/p01_00.jpg", imgs:["img/p01_00.jpg","img/p01_01.jpg","img/p01_02.jpg","img/p01_03.jpg","img/p01_04.jpg"]},
+  {title:"Кухня-гостиная, ЖК «Шагал»", tag:"Кухня-гостиная", cap:"Бежевый, но не скучный проект с необычной планировкой и шикарным видом из окон.", cover:"img/p04_00.jpg", imgs:["img/p04_00.jpg","img/p04_01.jpg","img/p04_02.jpg","img/p04_03.jpg","img/p04_04.jpg","img/p04_05.jpg","img/p04_06.jpg","img/p04_07.jpg","img/p04_08.jpg"]},
+  {title:"Сдержанный кабинет", tag:"Кабинет", cap:"Симметричная строгость молдингов, игра прямоугольных и круглых форм, скульптурные светильники. Без кричащего цвета — но сложно и интересно.", cover:"img/p08_00.jpg", imgs:["img/p08_00.jpg","img/p08_01.jpg","img/p08_02.jpg","img/p08_03.jpg","img/p08_04.jpg","img/p08_05.jpg","img/p08_06.jpg","img/p08_07.jpg","img/p08_08.jpg","img/p08_09.jpg"]},
+  {title:"Холл в отделке вайтбокс", tag:"Холл", cap:"Без переделок планировки: линию верха дверей подчеркнули графичными бра, которые подсвечивают картины. Из лимона — очень классный лимонад.", cover:"img/p07_00.jpg", imgs:["img/p07_00.jpg","img/p07_01.jpg","img/p07_02.jpg","img/p07_03.jpg","img/p07_04.jpg","img/p07_05.jpg"]},
+  {title:"Холл, ЖК «Дельвиг»", tag:"Холл", cap:"Нейтральная классика, разбавленная «чем-то этаким»: накладка ягодного цвета на входной двери перекликается с кухонным гарнитуром.", cover:"img/p10_00.jpg", imgs:["img/p10_00.jpg","img/p10_01.jpg","img/p10_02.jpg","img/p10_03.jpg","img/p10_04.jpg","img/p10_05.jpg"]},
+  {title:"Спальня, ЖК «Бетанкур»", tag:"Спальня", cap:"Одна из самых необычных спален в портфолио: смелый цвет стен и нестандартная расстановка мебели, продиктованная конфигурацией помещения.", cover:"img/p05_00.jpg", imgs:["img/p05_00.jpg","img/p05_01.jpg","img/p05_02.jpg"]},
+  {title:"Комната сына", tag:"Детская", cap:"Необычная задача: подобрать мебель и свет в уже готовый ремонт — чистую белую «коробочку». Получился характерный и цельный интерьер.", cover:"img/p06_00.jpg", imgs:["img/p06_00.jpg","img/p06_01.jpg","img/p06_02.jpg","img/p06_03.jpg","img/p06_04.jpg","img/p06_05.jpg"]},
+  {title:"Жёлтая ванная, ЖК «Бетанкур»", tag:"Ванная", cap:"Цветная ванная комната с отсылками к Китаю — давно не было «чего-то желтенького».", cover:"img/p11_00.jpg", imgs:["img/p11_00.jpg","img/p11_01.jpg","img/p11_02.jpg","img/p11_03.jpg"]},
+  {title:"Гостевая спальня в частном доме", tag:"Реализованный объект", cap:"Сложный цвет стен разбавляют грязно-лимонный и бордо. Вся мебель российского производства.", cover:"img/p02_00.jpg", imgs:["img/p02_00.jpg","img/p02_01.jpg","img/p02_02.jpg"]},
+  {title:"Реализации 2024", tag:"Фото от заказчиков", cap:"Фотографии, которыми поделились заказчики, завершившие ремонт и уже живущие в своих интерьерах.", cover:"img/p00_01.jpg", imgs:["img/p00_00.jpg","img/p00_01.jpg","img/p00_02.jpg","img/p00_03.jpg","img/p00_04.jpg","img/p00_05.jpg","img/p00_06.jpg","img/p00_07.jpg","img/p00_08.jpg","img/p00_09.jpg","img/p00_10.jpg","img/p00_11.jpg","img/p00_12.jpg","img/p00_13.jpg","img/p00_14.jpg","img/p00_15.jpg","img/p00_16.jpg","img/p00_17.jpg","img/p00_18.jpg"]}
+];
+
+const grid = document.getElementById('grid');
+PROJECTS.forEach((p,i)=>{
+  const el = document.createElement('div');
+  el.className = 'card';
+  el.innerHTML = `<img src="${p.cover}" alt="${p.title}" loading="lazy">
+    <div class="veil"></div>
+    <div class="count">${p.imgs.length} фото</div>
+    <div class="info"><div class="tag">${p.tag}</div><h3>${p.title}</h3></div>`;
+  el.addEventListener('click',()=>openLb(i,0));
+  grid.appendChild(el);
+});
+
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),
+lbTitle=document.getElementById('lbTitle'),lbCounter=document.getElementById('lbCounter'),
+lbCap=document.getElementById('lbCap');
+let cur={p:0,i:0};
+function openLb(p,i){cur={p,i};render();lb.classList.add('open');document.body.style.overflow='hidden'}
+function closeLb(){lb.classList.remove('open');document.body.style.overflow=''}
+function render(){
+  const pr=PROJECTS[cur.p];
+  lbImg.src=pr.imgs[cur.i];
+  lbImg.alt=pr.title+' — дизайн интерьера, фото '+(cur.i+1);
+  lbTitle.textContent=pr.title;
+  lbCounter.textContent=(cur.i+1)+' / '+pr.imgs.length;
+  lbCap.textContent=pr.cap;
+}
+function step(d){
+  const pr=PROJECTS[cur.p];
+  cur.i=(cur.i+d+pr.imgs.length)%pr.imgs.length;
+  render();
+}
+document.getElementById('lbClose').onclick=closeLb;
+document.getElementById('lbPrev').onclick=()=>step(-1);
+document.getElementById('lbNext').onclick=()=>step(1);
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.classList.contains('lb-stage'))closeLb()});
+document.addEventListener('keydown',e=>{
+  if(!lb.classList.contains('open'))return;
+  if(e.key==='Escape')closeLb();
+  if(e.key==='ArrowLeft')step(-1);
+  if(e.key==='ArrowRight')step(1);
+});
+let tx=null;
+lb.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});
+lb.addEventListener('touchend',e=>{
+  if(tx===null)return;
+  const dx=e.changedTouches[0].clientX-tx;
+  if(Math.abs(dx)>50)step(dx<0?1:-1);
+  tx=null;
+},{passive:true});
+
+document.getElementById('burger').onclick=()=>document.body.classList.toggle('menu-open');
+document.querySelectorAll('.mobile-menu a').forEach(a=>a.onclick=()=>document.body.classList.remove('menu-open'));
+
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>40),{passive:true});
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
