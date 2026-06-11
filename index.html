@@ -18,7 +18,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%233d4a3f'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23f6f3ee' text-anchor='middle'%3EИН%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{
   --bg:#f6f3ee;
@@ -67,7 +68,7 @@ body.menu-open header{z-index:60}
 
 /* hero */
 .hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:url('img/p09_00.jpg') center 35%/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:url('img/thumbs/hero.webp') center 35%/cover no-repeat}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(var(--ink-deep),.35) 0%,rgba(var(--ink-deep),.05) 40%,rgba(var(--ink-deep),.62) 100%)}
 .hero .wrap{position:relative;z-index:2;padding-bottom:9vh;width:100%}
 .hero h1{font-size:clamp(40px,7vw,86px);line-height:1.04;font-weight:500;max-width:13ch}
@@ -235,7 +236,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <section id="about">
   <div class="wrap about-grid">
-    <div class="about-photo"><img src="img/portrait.jpg" alt="Ирина Новикова — дизайнер интерьеров"></div>
+    <div class="about-photo"><img src="img/thumbs/portrait.webp" alt="Ирина Новикова — дизайнер интерьеров" width="760" height="1012"></div>
     <div class="about-text">
       <p class="kicker">Обо мне</p>
       <h2>Ирина Новикова</h2>
@@ -357,18 +358,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <script>
 const PROJECTS = [
-  {title:"Зелёно-синий проект", tag:"Квартира целиком", cap:"Оттенки от оливкового до насыщенного синего перетекают из комнаты в комнату. Круговая планировка через ванную — функционально и удобно.", cover:"img/p09_00.jpg", imgs:["img/p09_00.jpg","img/p09_01.jpg","img/p09_02.jpg","img/p09_03.jpg","img/p09_04.jpg","img/p09_05.jpg","img/p09_06.jpg","img/p09_07.jpg","img/p09_08.jpg"]},
-  {title:"Кухня-гостиная, ЖК «1-й Шереметьевский»", tag:"Кухня-гостиная", cap:"Гармоничная, минималистичная, но уютная и яркая кухня-гостиная с изумрудными акцентами.", cover:"img/p03_00.jpg", imgs:["img/p03_00.jpg","img/p03_01.jpg","img/p03_02.jpg","img/p03_03.jpg","img/p03_04.jpg","img/p03_05.jpg","img/p03_06.jpg","img/p03_07.jpg","img/p03_08.jpg","img/p03_09.jpg"]},
-  {title:"Кабинет с библиотекой", tag:"Реализованный объект", cap:"Обволакивающая зона кабинета при спальне. Образ изобретателя: стилизованные небесные тела на потолке в духе гравюры Фламмариона, металлическая лампа с зажимами.", cover:"img/p01_00.jpg", imgs:["img/p01_00.jpg","img/p01_01.jpg","img/p01_02.jpg","img/p01_03.jpg","img/p01_04.jpg"]},
-  {title:"Кухня-гостиная, ЖК «Шагал»", tag:"Кухня-гостиная", cap:"Бежевый, но не скучный проект с необычной планировкой и шикарным видом из окон.", cover:"img/p04_00.jpg", imgs:["img/p04_00.jpg","img/p04_01.jpg","img/p04_02.jpg","img/p04_03.jpg","img/p04_04.jpg","img/p04_05.jpg","img/p04_06.jpg","img/p04_07.jpg","img/p04_08.jpg"]},
-  {title:"Сдержанный кабинет", tag:"Кабинет", cap:"Симметричная строгость молдингов, игра прямоугольных и круглых форм, скульптурные светильники. Без кричащего цвета — но сложно и интересно.", cover:"img/p08_00.jpg", imgs:["img/p08_00.jpg","img/p08_01.jpg","img/p08_02.jpg","img/p08_03.jpg","img/p08_04.jpg","img/p08_05.jpg","img/p08_06.jpg","img/p08_07.jpg","img/p08_08.jpg","img/p08_09.jpg"]},
-  {title:"Холл в отделке вайтбокс", tag:"Холл", cap:"Без переделок планировки: линию верха дверей подчеркнули графичными бра, которые подсвечивают картины. Из лимона — очень классный лимонад.", cover:"img/p07_00.jpg", imgs:["img/p07_00.jpg","img/p07_01.jpg","img/p07_02.jpg","img/p07_03.jpg","img/p07_04.jpg","img/p07_05.jpg"]},
-  {title:"Холл, ЖК «Дельвиг»", tag:"Холл", cap:"Нейтральная классика, разбавленная «чем-то этаким»: накладка ягодного цвета на входной двери перекликается с кухонным гарнитуром.", cover:"img/p10_00.jpg", imgs:["img/p10_00.jpg","img/p10_01.jpg","img/p10_02.jpg","img/p10_03.jpg","img/p10_04.jpg","img/p10_05.jpg"]},
-  {title:"Спальня, ЖК «Бетанкур»", tag:"Спальня", cap:"Одна из самых необычных спален в портфолио: смелый цвет стен и нестандартная расстановка мебели, продиктованная конфигурацией помещения.", cover:"img/p05_00.jpg", imgs:["img/p05_00.jpg","img/p05_01.jpg","img/p05_02.jpg"]},
-  {title:"Комната сына", tag:"Детская", cap:"Необычная задача: подобрать мебель и свет в уже готовый ремонт — чистую белую «коробочку». Получился характерный и цельный интерьер.", cover:"img/p06_00.jpg", imgs:["img/p06_00.jpg","img/p06_01.jpg","img/p06_02.jpg","img/p06_03.jpg","img/p06_04.jpg","img/p06_05.jpg"]},
-  {title:"Жёлтая ванная, ЖК «Бетанкур»", tag:"Ванная", cap:"Цветная ванная комната с отсылками к Китаю — давно не было «чего-то желтенького».", cover:"img/p11_00.jpg", imgs:["img/p11_00.jpg","img/p11_01.jpg","img/p11_02.jpg","img/p11_03.jpg"]},
-  {title:"Гостевая спальня в частном доме", tag:"Реализованный объект", cap:"Сложный цвет стен разбавляют грязно-лимонный и бордо. Вся мебель российского производства.", cover:"img/p02_00.jpg", imgs:["img/p02_00.jpg","img/p02_01.jpg","img/p02_02.jpg"]},
-  {title:"Реализации 2024", tag:"Фото от заказчиков", cap:"Фотографии, которыми поделились заказчики, завершившие ремонт и уже живущие в своих интерьерах.", cover:"img/p00_01.jpg", imgs:["img/p00_00.jpg","img/p00_01.jpg","img/p00_02.jpg","img/p00_03.jpg","img/p00_04.jpg","img/p00_05.jpg","img/p00_06.jpg","img/p00_07.jpg","img/p00_08.jpg","img/p00_09.jpg","img/p00_10.jpg","img/p00_11.jpg","img/p00_12.jpg","img/p00_13.jpg","img/p00_14.jpg","img/p00_15.jpg","img/p00_16.jpg","img/p00_17.jpg","img/p00_18.jpg"]}
+  {title:"Зелёно-синий проект", tag:"Квартира целиком", cap:"Оттенки от оливкового до насыщенного синего перетекают из комнаты в комнату. Круговая планировка через ванную — функционально и удобно.", cover:"img/thumbs/p09_00.webp", imgs:["img/p09_00.jpg","img/p09_01.jpg","img/p09_02.jpg","img/p09_03.jpg","img/p09_04.jpg","img/p09_05.jpg","img/p09_06.jpg","img/p09_07.jpg","img/p09_08.jpg"]},
+  {title:"Кухня-гостиная, ЖК «1-й Шереметьевский»", tag:"Кухня-гостиная", cap:"Гармоничная, минималистичная, но уютная и яркая кухня-гостиная с изумрудными акцентами.", cover:"img/thumbs/p03_00.webp", imgs:["img/p03_00.jpg","img/p03_01.jpg","img/p03_02.jpg","img/p03_03.jpg","img/p03_04.jpg","img/p03_05.jpg","img/p03_06.jpg","img/p03_07.jpg","img/p03_08.jpg","img/p03_09.jpg"]},
+  {title:"Кабинет с библиотекой", tag:"Реализованный объект", cap:"Обволакивающая зона кабинета при спальне. Образ изобретателя: стилизованные небесные тела на потолке в духе гравюры Фламмариона, металлическая лампа с зажимами.", cover:"img/thumbs/p01_00.webp", imgs:["img/p01_00.jpg","img/p01_01.jpg","img/p01_02.jpg","img/p01_03.jpg","img/p01_04.jpg"]},
+  {title:"Кухня-гостиная, ЖК «Шагал»", tag:"Кухня-гостиная", cap:"Бежевый, но не скучный проект с необычной планировкой и шикарным видом из окон.", cover:"img/thumbs/p04_00.webp", imgs:["img/p04_00.jpg","img/p04_01.jpg","img/p04_02.jpg","img/p04_03.jpg","img/p04_04.jpg","img/p04_05.jpg","img/p04_06.jpg","img/p04_07.jpg","img/p04_08.jpg"]},
+  {title:"Сдержанный кабинет", tag:"Кабинет", cap:"Симметричная строгость молдингов, игра прямоугольных и круглых форм, скульптурные светильники. Без кричащего цвета — но сложно и интересно.", cover:"img/thumbs/p08_00.webp", imgs:["img/p08_00.jpg","img/p08_01.jpg","img/p08_02.jpg","img/p08_03.jpg","img/p08_04.jpg","img/p08_05.jpg","img/p08_06.jpg","img/p08_07.jpg","img/p08_08.jpg","img/p08_09.jpg"]},
+  {title:"Холл в отделке вайтбокс", tag:"Холл", cap:"Без переделок планировки: линию верха дверей подчеркнули графичными бра, которые подсвечивают картины. Из лимона — очень классный лимонад.", cover:"img/thumbs/p07_00.webp", imgs:["img/p07_00.jpg","img/p07_01.jpg","img/p07_02.jpg","img/p07_03.jpg","img/p07_04.jpg","img/p07_05.jpg"]},
+  {title:"Холл, ЖК «Дельвиг»", tag:"Холл", cap:"Нейтральная классика, разбавленная «чем-то этаким»: накладка ягодного цвета на входной двери перекликается с кухонным гарнитуром.", cover:"img/thumbs/p10_00.webp", imgs:["img/p10_00.jpg","img/p10_01.jpg","img/p10_02.jpg","img/p10_03.jpg","img/p10_04.jpg","img/p10_05.jpg"]},
+  {title:"Спальня, ЖК «Бетанкур»", tag:"Спальня", cap:"Одна из самых необычных спален в портфолио: смелый цвет стен и нестандартная расстановка мебели, продиктованная конфигурацией помещения.", cover:"img/thumbs/p05_00.webp", imgs:["img/p05_00.jpg","img/p05_01.jpg","img/p05_02.jpg"]},
+  {title:"Комната сына", tag:"Детская", cap:"Необычная задача: подобрать мебель и свет в уже готовый ремонт — чистую белую «коробочку». Получился характерный и цельный интерьер.", cover:"img/thumbs/p06_00.webp", imgs:["img/p06_00.jpg","img/p06_01.jpg","img/p06_02.jpg","img/p06_03.jpg","img/p06_04.jpg","img/p06_05.jpg"]},
+  {title:"Жёлтая ванная, ЖК «Бетанкур»", tag:"Ванная", cap:"Цветная ванная комната с отсылками к Китаю — давно не было «чего-то желтенького».", cover:"img/thumbs/p11_00.webp", imgs:["img/p11_00.jpg","img/p11_01.jpg","img/p11_02.jpg","img/p11_03.jpg"]},
+  {title:"Гостевая спальня в частном доме", tag:"Реализованный объект", cap:"Сложный цвет стен разбавляют грязно-лимонный и бордо. Вся мебель российского производства.", cover:"img/thumbs/p02_00.webp", imgs:["img/p02_00.jpg","img/p02_01.jpg","img/p02_02.jpg"]},
+  {title:"Реализации 2024", tag:"Фото от заказчиков", cap:"Фотографии, которыми поделились заказчики, завершившие ремонт и уже живущие в своих интерьерах.", cover:"img/thumbs/p00_01.webp", imgs:["img/p00_00.jpg","img/p00_01.jpg","img/p00_02.jpg","img/p00_03.jpg","img/p00_04.jpg","img/p00_05.jpg","img/p00_06.jpg","img/p00_07.jpg","img/p00_08.jpg","img/p00_09.jpg","img/p00_10.jpg","img/p00_11.jpg","img/p00_12.jpg","img/p00_13.jpg","img/p00_14.jpg","img/p00_15.jpg","img/p00_16.jpg","img/p00_17.jpg","img/p00_18.jpg"]}
 ];
 
 const grid = document.getElementById('grid');
