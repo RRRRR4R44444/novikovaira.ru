@@ -237,7 +237,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
 <section id="about">
   <div class="wrap about-grid">
-    <div class="about-photo"><img src="img/thumbs/portrait.webp" alt="Ирина Новикова — дизайнер интерьеров" width="760" height="1012"></div>
+    <div class="about-photo"><img src="img/thumbs/portrait.webp" srcset="img/thumbs/portrait_380.webp 380w, img/thumbs/portrait.webp 760w" sizes="(max-width:960px) 92vw, 380px" alt="Ирина Новикова — дизайнер интерьеров" width="760" height="1012"></div>
     <div class="about-text">
       <p class="kicker">Обо мне</p>
       <h2>Ирина Новикова</h2>
@@ -381,7 +381,8 @@ PROJECTS.forEach((p,i)=>{
   el.tabIndex = 0;
   el.setAttribute('role','button');
   el.setAttribute('aria-label','Открыть галерею: '+p.title);
-  el.innerHTML = `<img src="${p.cover}" alt="${p.title}" loading="lazy">
+  const cover380 = p.cover.replace('.webp','_380.webp');
+  el.innerHTML = `<img src="${p.cover}" srcset="${cover380} 380w, ${p.cover} 760w" sizes="(max-width:640px) 92vw, (max-width:960px) 45vw, 380px" alt="${p.title}" loading="lazy">
     <div class="veil"></div>
     <div class="count">${p.imgs.length} фото</div>
     <div class="info"><div class="tag">${p.tag}</div><h3>${p.title}</h3></div>`;
